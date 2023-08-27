@@ -99,7 +99,7 @@
 
 // ------------------------------------------------
 
-  // outer variables-----------------------------
+// outer variables-----------------------------
 
 // let username = `Altaf`;
 // var username2 = `Patel`;
@@ -128,42 +128,138 @@
 // alert(username);  //Altaf the value was modified by the function.
 // ------------------------------------------------------------------------
 
-// function study(){
-//   console.log("do study");
-//   console.log("do hardwork");
-//   alert("get success");
+// function abcd(){
+//   for (var i=1; i<12; i++){
+//     console.log (i);
+//   }
+//   console.log(i);
 // }
 
-// study();
-// study();
+// abcd();
 
-// var arr = [12,13,14,15,55];
+// var a = 5;
+// let b = 10;
+// -------------------------------------------------
 
-// console.log(arr);
+// console.log('01-swapping-variables');
 
-// arr.push(8);
-// arr.pop();
-// arr.unshift(23);
-// arr.shift();
-// arr.splice()
+// let var1 = 'one';
+// let var2 = 'two';
+
+// console.log('Before swap in var1 :', var1);
+// console.log('Before swap in var2 :', var2);
 
 
-// alert( "The output is " +  arr[3]);
 
-let a = 20;
-let b = '20';
-b = Number (b);
-console.log(typeof(b));
+// // swapping value
 
-c = a*b;
-// console.log (a + b);
+// let tempVar = var1;
+// var1 = var2;
+// var2 = tempVar;
 
-// console.log(a-b);
-// // console.log(a*b);
-// console.log(a/b);
-// console.log( a*a*b*a);
+// console.log('After swap in var1 :', var1);
+// console.log('After swap in var2 :', var2);
+// ----------------------------------------------------------------
 
-alert (c) = ("The Result of multiplication is " + c);
+// console.log('02-max-number');
+
+// function findMaxNumber(num1, num2) {
+//   // 1. long syntax
+//   if (num1 > num2) {
+//     return num1;
+//   } else {
+//     return num2;
+//   }
+
+
+//   // 2. short  syntax
+//   if (num1 > num2) return num1;
+//   else return num2;
+
+//   // 3. ternary short sytax
+//   return (num1 > num2) ? num1 : num2;
+// }
+
+// function findMaxNumberLong(num1, num2) {
+//   // 1. long syntax
+//   if (num1 > num2) {
+//     return num1;
+//   } else {
+//     return num2;
+//   }
+// }
+
+
+// function findMaxNumberShort(num1, num2) {
+//   // 2. short  syntax
+//   if (num1 > num2) return num1;
+//   else return num2;
+
+// }
+
+// function findMaxNumberTernary(num1, num2) {
+//   // 3. ternary short sytax
+//   return (num1 > num2) ? num1 : num2;
+// }
+
+
+
+// let checkMax1 = findMaxNumberLong(10, 5);
+// console.log('Max Number from Long Syntax :', checkMax1);
+
+
+// let checkMax2 = findMaxNumberShort(10, 15);
+// console.log('Max Number from short Syntax :', checkMax2);
+
+// let checkMax3 = findMaxNumberTernary(100, 100);
+// console.log('Max Number from ternary Syntax :', checkMax3);
+// ---------------------------------------------------------------------
+
+
+console.log('3-landscape-portrait');
+
+// function isLandscape(width, height){
+//   // 3. ternary short syntax 
+//   return (width > height) 
+
+// }
+
+// function isPotrate(width, height){
+//   return (width < height)
+// }
+
+
+// let checkWidthHeight1 = isPotrate(800, 600);
+// console.log('Landscape: ', checkWidthHeight1);
+
+// let checkWidthHeight2 = isPotrate(600, 800);
+// console.log('Landscape: ', checkWidthHeight2);
+
+// let checkWidthHeight3 = isPotrate(1024, 768);
+// console.log('Landscape: ', checkWidthHeight3);
+
+
+
+
+function isLandscapeorPotrate(width, height){
+     if (width > height) {
+        return 'Landscape' ;
+      } else {
+        return "Potrate";
+      }
+    }
+
+
+// let checkWidthHeight1 = isLandscapeorPotrate(800, 600);
+// console.log('Landscape: ', checkWidthHeight1);
+
+let checkWidthHeight2 = isLandscapeorPotrate(600, 800);
+console.log('Landscape: ', checkWidthHeight2);
+
+// let checkWidthHeight3 = isLandscapeorPotrate(1024, 768);
+// console.log('Landscape: ', checkWidthHeight3);
+
+
 
 
 
