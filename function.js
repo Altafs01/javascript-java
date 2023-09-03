@@ -216,7 +216,7 @@
 // ---------------------------------------------------------------------
 
 
-console.log('3-landscape-portrait');
+// console.log('3-landscape-portrait');
 
 // function isLandscape(width, height){
 //   // 3. ternary short syntax 
@@ -241,23 +241,117 @@ console.log('3-landscape-portrait');
 
 
 
-function isLandscapeorPotrate(width, height){
-     if (width > height) {
-        return 'Landscape' ;
-      } else {
-        return "Potrate";
-      }
-    }
+// function isLandscapeorPotrate(width, height){
+//      if (width > height) {
+//         return 'Landscape' ;
+//       } else {
+//         return "Potrate";
+//       }
+//     }
 
 
 // let checkWidthHeight1 = isLandscapeorPotrate(800, 600);
 // console.log('Landscape: ', checkWidthHeight1);
 
-let checkWidthHeight2 = isLandscapeorPotrate(600, 800);
-console.log('Landscape: ', checkWidthHeight2);
+// let checkWidthHeight2 = isLandscapeorPotrate(600, 800);
+// console.log('Landscape: ', checkWidthHeight2);
 
 // let checkWidthHeight3 = isLandscapeorPotrate(1024, 768);
 // console.log('Landscape: ', checkWidthHeight3);
+// ---------------------------------------------------------------
+
+
+// isfizzBuzz----------------------------------------------
+// function isfizzBuzz(arg) {
+//     if (typeof (arg) !== 'number') {
+//         return ('Nan Not a number Please enter number');
+
+//     }
+
+//     if ((arg % 3 === 0) && (arg % 5 === 0)){
+
+//         return ('fizzBuzz');
+//     }
+
+//     if(arg % 3 ===0){
+//         return('fizz')
+//     }
+
+//     if(arg % 5 ===0 ){
+//         return('Buzz');
+//     }
+
+//     else{
+//         return ('Given Input Number/value')
+//     }
+
+// }
+
+
+
+// let check1 = isfizzBuzz (2)
+// console.log(check1);
+
+// let check2 = isfizzBuzz (9)
+// console.log(check2);
+
+// let check3 = isfizzBuzz (10)
+// console.log(check3);
+
+// let check = isfizzBuzz ('one')
+// console.log(check1);
+// ----------------------------------------------------------------------
+
+
+
+
+// function isspeedlimit (arg){
+//     if (arg < 70){
+//         return ('Good Safe Driving');
+
+//     }
+
+//     if (arg > 70)  {
+//         let pp = 0;
+//         pp= (arg -70)/5;
+//         console.log(pp)
+
+//         if (pp >=10 ){
+//             return ('license Suspende');
+//         }
+
+//         else{
+//             return('speed Limit crossed Penalty Point' + pp);
+//         }
+//     }
+
+// }
+
+// let check = isspeedlimit(90)
+// console.log(check);
+
+// let check1 = isspeedlimit(150)
+// console.log(check1);
+// -----------------------------------------------------
+
+
+function isOddEvenNumber(curLimit){
+
+    for(i=curLimit; i<10; i++ ){
+        if ((i % 2 )==0){
+            return ('Even Number')
+        }
+        else{
+            return ('Odd Number')
+        }
+    }
+}
+
+let check = isOddEvenNumber(5)
+console.log(check);
+
+
+
 
 
 
