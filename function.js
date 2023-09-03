@@ -303,7 +303,7 @@
 // ----------------------------------------------------------------------
 
 
-
+// function isspeedlimit -----------------------------
 
 // function isspeedlimit (arg){
 //     if (arg < 70){
@@ -334,21 +334,22 @@
 // console.log(check1);
 // -----------------------------------------------------
 
+// for loop ---------------------------------------------------
+// function isOddEvenNumber(curLimit){
 
-function isOddEvenNumber(curLimit){
+//     for(i=0; i<=10 ; i++ ){
+//         if ((i % 2 )==0){
+//             console.log(i , 'EVEN')
+//         }
+//         else{
+//             console.log(i, 'ODD')
+//         }
+//     }
+// }
 
-    for(i=curLimit; i<10; i++ ){
-        if ((i % 2 )==0){
-            return ('Even Number')
-        }
-        else{
-            return ('Odd Number')
-        }
-    }
-}
-
-let check = isOddEvenNumber(5)
-console.log(check);
+// let check = isOddEvenNumber(10)
+// console.log(check);
+// -------------------------------------------------------------------------------
 
 
 
