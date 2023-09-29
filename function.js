@@ -444,6 +444,8 @@
 // para.style.fontSize = `40px`;
 // para.style.color = `green`;
 // para.style.backgroundColor = `black`;
+// para.style.padding = `20px`
+// para.style.margin = `200px`
 // ----------------------------------------------------------------
 
 // user = {
@@ -499,14 +501,14 @@
 // console.log(inst2.func1());
 // ------------------------------------------------------------------------------------------------------
 
-// var arr = ["India", "Japan", "USA", "Austrilia"];
+var arr = ["India", "Japan", "USA", "Austrilia"];
 var arr2 = new Array("Mumbai", "Pune", "Banglore", "Aurangabad");
 
-// console.log(arr);
-// console.log("Array Length :", arr.length);
-// console.log(arr2[0]);
+console.log(arr);
+console.log("Array Length :", arr.length);
+console.log(arr2[0]);
 
-// // push and pop in array
+// push and pop in array
 
 arr2.pop();
 console.log(arr2);
@@ -517,19 +519,19 @@ console.log(arr2);
 
 // unshift and shift in array 
 
-// console.time();
-// arr2.unshift("Indore");
-// console.log("After unshift:", arr2);
-// arr2.shift();
-// console.timeEnd();
+console.time();
+arr2.unshift("Indore");
+console.log("After unshift:", arr2);
+arr2.shift();
+console.timeEnd();
 
-// // Array.form
+// Array.form
 
-// console.log(Array.from("fauzan falke"));
-// console.log(Array.from([2, 3, 4], (x => x * x)));
+console.log(Array.from("fauzan falke"));
+console.log(Array.from([2, 3, 4], (x => x * x)));
 
-// var arr3 = "javaScript";
-// console.log(Array.from(arr3, (x => x + 5)));
+var arr3 = "javaScript";
+console.log(Array.from(arr3, (x => x + 5)));
 
 // ----------------------------------------------------------------------------------------------------------
 
@@ -547,3 +549,28 @@ console.log(arr2);
 // var array1 = [5, 11, 20, 100];
 // console.log(array1.every((x) => x % 5 === 0));
 // -------------------------------------------------------------------------------------------------------------------------
+
+//  Array.fill fills alll the elements of given array with value provied
+// var testArray = [2, 4, 6, 8, 10, 12, 14];
+
+// console.log("Original Array", testArray);
+
+// console.log("After using fill ", testArray.fill("k", 2, 6));
+
+// const array2 = [1, 2, 3, 20, 30, 40];
+// const result = array2.filter((x) => x < 10);
+// console.log("Original Array", array2);
+// console.log("Result", result);
+// -------------------------------------------------------------------------------------------------
+
+// slice and splice in javascript
+
+// const number =[11, 22, 33, 44, 55];
+// // removed = number.slice(1, 2)
+// // console.log(removed);
+// console.log(number.slice(0, 2));
+
+// const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+// console.log(animals)
+// console.log(animals.slice(1));
