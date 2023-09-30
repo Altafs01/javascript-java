@@ -501,37 +501,37 @@
 // console.log(inst2.func1());
 // ------------------------------------------------------------------------------------------------------
 
-var arr = ["India", "Japan", "USA", "Austrilia"];
-var arr2 = new Array("Mumbai", "Pune", "Banglore", "Aurangabad");
+// var arr = ["India", "Japan", "USA", "Austrilia"];
+// var arr2 = new Array("Mumbai", "Pune", "Banglore", "Aurangabad");
 
-console.log(arr);
-console.log("Array Length :", arr.length);
-console.log(arr2[0]);
+// console.log(arr);
+// console.log("Array Length :", arr.length);
+// console.log(arr2[0]);
 
-// push and pop in array
+// // push and pop in array
 
-arr2.pop();
-console.log(arr2);
-arr2.push();
-arr2.push("Jaipur");
-console.log(arr2);
+// arr2.pop();
+// console.log(arr2);
+// arr2.push();
+// arr2.push("Jaipur");
+// console.log(arr2);
 
 
-// unshift and shift in array 
+// // unshift and shift in array 
 
-console.time();
-arr2.unshift("Indore");
-console.log("After unshift:", arr2);
-arr2.shift();
-console.timeEnd();
+// console.time();
+// arr2.unshift("Indore");
+// console.log("After unshift:", arr2);
+// arr2.shift();
+// console.timeEnd();
 
-// Array.form
+// // Array.form
 
-console.log(Array.from("fauzan falke"));
-console.log(Array.from([2, 3, 4], (x => x * x)));
+// console.log(Array.from("fauzan falke"));
+// console.log(Array.from([2, 3, 4], (x => x * x)));
 
-var arr3 = "javaScript";
-console.log(Array.from(arr3, (x => x + 5)));
+// var arr3 = "javaScript";
+// console.log(Array.from(arr3, (x => x + 5)));
 
 // ----------------------------------------------------------------------------------------------------------
 
@@ -574,3 +574,69 @@ console.log(Array.from(arr3, (x => x + 5)));
 
 // console.log(animals)
 // console.log(animals.slice(1));
+// ------------------------------------------------------------------------------------
+
+// promise--------------------------------------//
+
+// var promise = new Promise(function (resolve , reject){
+//     // setTimeout (() => reject ("Sorry"), 2000);
+//     // resolve("Done");
+//     setTimeout (()=> resolve("you made mistake"),10000);
+//     // reject("sorry");
+// });
+
+// promise.then(
+//     result => alert("Resolved"),
+//     error => console.log (error)
+// );
+// -------------------------------------------------------------------------//
+
+// function func1(){
+//     return new Promise (function (resolve, reject)){
+//         setTimeout(()=> {
+//             const error = false;
+//             if (!error){
+//                 console.log('function1 : your promise has been rosolved')
+//                 resolve();
+//             }
+//             else{
+//                 console.log('function2 : your promise has been reject')
+//                 reject();
+//             }
+//         },1000)
+//     }
+// }
+
+// func1.then(function(){
+//         result => console.log("congratulation your form has been submitted")
+// })
+// -----------------------------------------------------------------------------------------------------
+
+students = [
+            {name : "Altaf", subject : "javascript"},
+            {name : "Danish", subject : "full stack devlopment"},
+            {name : "Sohel", subject : "Mern stack development"}
+]
+
+function enrollStudent( newStudents, callback){
+    setTimeout(function (){
+        students.push(newStudent);
+        console.log("Student has been enrolled")
+        callback();
+    },1000)
+}
+
+function getStudent(){
+    setTimeout(function(){
+        let str = " ";
+        students.forEach(function(student){
+            str += `<li> ${ student.name + student.subject}</li>`
+        });
+        document.getElementById('students').innerHTML  = str;
+        console.log("Students have been fetched");
+    },1000);
+}
+
+let newStudent = {name : "shahbaj", subject : "Mern stack developement"}
+enrollStudent(newStudent, getStudent); //  Higher order function
+getStudent();
