@@ -591,52 +591,85 @@
 // );
 // -------------------------------------------------------------------------//
 
-// function func1(){
-//     return new Promise (function (resolve, reject)){
-//         setTimeout(()=> {
-//             const error = false;
-//             if (!error){
-//                 console.log('function1 : your promise has been rosolved')
-//                 resolve();
-//             }
-//             else{
-//                 console.log('function2 : your promise has been reject')
-//                 reject();
-//             }
-//         },1000)
-//     }
-// }
+function func1(){
+    return new Promise (function (resolve, reject){
+        setTimeout(()=> {
+            const error = false;
+            if (!error){
+                console.log('function1 : your promise has been rosolved')
+                resolve();
+            }
+            else{
+                console.log('function2 : your promise has been reject')
+                reject();
+            }
+        },1000)
+    });
+}
 
-// func1.then(function(){
-//         result => console.log("congratulation your form has been submitted")
-// })
+func1.then(value =>{
+     console.log("congratulation your form has been submitted", value);
+});
+
+
 // -----------------------------------------------------------------------------------------------------
 
-students = [
-            {name : "Altaf", subject : "javascript"},
-            {name : "Danish", subject : "full stack devlopment"},
-            {name : "Sohel", subject : "Mern stack development"}
-]
+// students = [
+//             {name : "Altaf", subject : "javascript"},
+//             {name : "Danish", subject : "full stack devlopment"},
+//             {name : "Sohel", subject : "Mern stack development"}
+// ]
 
-function enrollStudent( newStudents, callback){
-    setTimeout(function (){
-        students.push(newStudent);
-        console.log("Student has been enrolled")
-        callback();
-    },1000)
-}
+// function enrollStudent( newStudents, callback){
+//     setTimeout(function (){
+//         students.push(newStudent);
+//         console.log("Student has been enrolled")
+//         callback();
+//     },1000)
+// }
 
-function getStudent(){
-    setTimeout(function(){
-        let str = " ";
-        students.forEach(function(student){
-            str += `<li> ${ student.name + student.subject}</li>`
-        });
-        document.getElementById('students').innerHTML  = str;
-        console.log("Students have been fetched");
-    },1000);
-}
+// function getStudent(){
+//     setTimeout(function(){
+//         let str = " ";
+//         students.forEach(function(student){
+//             str += `<li> ${ student.name + student.subject}</li>`
+//         });
+//         document.getElementById('students').innerHTML  = str;
+//         console.log("Students have been fetched");
+//     },1000);
+// }
 
-let newStudent = {name : "shahbaj", subject : "Mern stack developement"}
-enrollStudent(newStudent, getStudent); //  Higher order function
-getStudent();
+// let newStudent = {name : "shahbaj", subject : "Mern stack developement"}
+// enrollStudent(newStudent, getStudent); //  Higher order function
+// getStudent();
+// -------------------------------------------------------------------------------------------------------
+
+// var Cars = [
+//     {Name : "BMW", model : "2020"},
+//     {Name : "Mercedes", model : "2021"},
+//     {Name : "Farari", model : "2022"}
+// ]
+
+// function getNewCar(newCar, callback){
+//     setTimeout (function() {
+//         Cars.push(newCar);
+//         console.log("Congatulation to you to buy a new Car");
+//         callback();
+//     },1000)
+// }
+
+// function buyNewCar(){
+//     setTimeout(function(){
+//         let str = "";
+//         Cars.forEach(function(car){
+//             str += `<li> ${car.Name} </li>`
+//         });
+//         document.getElementById('students').innerHTML =str;
+//         console.log("Car have been sold");
+//     },1000);
+// }
+
+// let newCar = {Name : "Odi" , model : "2023"}
+// getNewCar(newCar, buyNewCar);
+// buyNewCar();
+// // ------------------------------------------------------------------------------------------------
